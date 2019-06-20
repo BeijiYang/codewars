@@ -46,3 +46,27 @@ const sumStrings = (a,b) => {
   
   return addedResult
 }
+
+// better solution:
+
+String.prototype.reverse = function() {
+  return this.split('').reverse().join('');
+}
+
+function sumStrings(a,b) {
+  a = a.reverse(); b = b.reverse();
+  var carry = 0;
+  var index = 0;
+  var sumDigits = [];
+  while (index < a.length || index < b.length || carry != 0) {
+    var aDigit = index < a.length ? parseInt(a[index]) : 0;
+    var bDigit = index < b.length ? parseInt(b[index]) : 0;
+    var digitSum = aDigit + bDigit + carry;
+    sumDigits.push((digitSum % 10).toString());
+    carry = Math.floor(digitSum / 10);
+    index++;
+  }
+  sumDigits.reverse();
+  while (sumDigits[0] == '0') sumDigits.shift();
+  return sumDigits.join('');
+}
