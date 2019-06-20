@@ -67,8 +67,12 @@ function sumStrings(a,b) {
   while (index < a.length || index < b.length || carry != 0) {
     var aDigit = index < a.length ? parseInt(a[index]) : 0;
     var bDigit = index < b.length ? parseInt(b[index]) : 0;
-    var digitSum = aDigit + bDigit + carry; // 进位的处理: 变量的维护与使用，用取余数更好
+    // 进位的处理
+    // digitSum：两边字符串中的数，以及上一位的进位的和
+    var digitSum = aDigit + bDigit + carry;
+    // 对 10 取余数，拿到 digitSum 个位上的数，是留在本位的
     sumDigits.push((digitSum % 10).toString()); 
+    // 除以 10，拿到 digitSum 十位上的数，是要进到下一位的
     carry = Math.floor(digitSum / 10);
     index++;
   }
