@@ -16,6 +16,9 @@ The use of BigInteger or BigNumber functions has been disabled, this requires a 
 I have removed the use of require in the javascript language.
 */
 
+// solution 1
+// 自己实现可应用于大整数的加法与乘法，在递归阶乘运算中使用
+
 const reverseStr = str => [...str].reverse().join('')
 
 const bigIntAdd = (str1, str2) => {
@@ -59,7 +62,7 @@ const bigIntMulti = (str1, str2) => {
 
 const factorial = n => {
   if (n < 0) return null
-  if (n === 1 || n === 0) return '1'
+  if (n === 0) return '1'
 
   return bigIntMulti(n + '', factorial(n - 1) + '')
 }
