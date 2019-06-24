@@ -6,3 +6,4 @@
 * Large Factorials
 * Next Bigger Number with the Same Digits
 * Validate Sudoku with size `NxN`
+* Multiplying numbers as strings
