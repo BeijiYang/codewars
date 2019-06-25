@@ -126,3 +126,16 @@ const movingShift = (str, shift) => {
   )
   return str2arr(codedStr)
 }
+
+
+
+
+
+
+const u = "I should have known that you would have a perfect answer for me!!!"
+const v = ["J vltasl rlhr ", "zdfog odxr ypw", " atasl rlhr p ", "gwkzzyq zntyhv", " lvz wp!!!"]
+console.log(
+  demovingShift(v, 1),
+  movingShift(u, 1),
+  code('x', 3)
+)
