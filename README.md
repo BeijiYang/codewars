@@ -11,6 +11,6 @@
 
 
 
-### elses
+### others
 
 * milliseconds => '00 : 00 : 00 . 000'
