@@ -8,3 +8,9 @@
 * Validate Sudoku with size `NxN`
 * Multiplying numbers as strings
 * First Variation on Caesar Cipher (CRYPTOGRAPHY)
+
+
+
+### elses
+
+* milliseconds => '00 : 00 : 00 . 000'
