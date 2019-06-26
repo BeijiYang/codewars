@@ -1,5 +1,6 @@
 // milliseconds: new Date() 差值
 
+// 按进制，先取余数（得到本位的数），再减去该余数并除以进制（得到上一位的数）
 const ms2Time = (milliseconds) => {
   let time = milliseconds
   const ms = milliseconds % 1000
