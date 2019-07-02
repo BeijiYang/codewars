@@ -43,4 +43,4 @@ const strong = num =>
     ? "STRONG!!!!"
     : "Not Strong !!"
 
-const factorial = num => (num === 1 || num === 0) ? 1 : num * factorial(num - 1)
+const factorial = num => num ? num * factorial(num - 1) : 1
