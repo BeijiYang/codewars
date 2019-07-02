@@ -13,6 +13,7 @@
 ### 7 kyu
 
 * Balanced Number
+* Strong Number
 
 
 
