@@ -15,7 +15,7 @@
 * Balanced Number
 * Strong Number
 * Disarium Number
-
+* Jumping Number
 
 
 ### others
