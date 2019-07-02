@@ -10,6 +10,11 @@
 * First Variation on Caesar Cipher (CRYPTOGRAPHY)
 
 
+### 7 kyu
+
+* Balanced Number
+
+
 
 ### others
 
