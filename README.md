@@ -14,6 +14,7 @@
 
 * Balanced Number
 * Strong Number
+* Disarium Number
 
 
 
