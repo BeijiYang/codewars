@@ -45,6 +45,7 @@ ALL translations are welcomed
 Enjoy Learning !!
 */
 
+// solution 1
 const jumpingNumber = num => {
   const list = [...num.toString()].map(Number)
   for (let i = 0; i < list.length; i++) {
@@ -53,6 +54,15 @@ const jumpingNumber = num => {
   return "Jumping!!"
 }
 
+// solution 2
+const jumpingNumber = num => {
+  const list = [...num.toString()].map(Number)
+
+  return list.find((n, i) => list[i + 1] !== undefined && Math.abs(n - list[i + 1]) !== 1)
+    ? "Not!!"
+    : "Jumping!!"
+}
+
 console.log(
-  jumpingNumber(501)
+  jumpingNumber(501) // 0 and undefined
 )
