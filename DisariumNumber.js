@@ -26,19 +26,9 @@ Enjoy Learning !!
 */
 
 const disariumNumber = num =>
-  num === [...num.toString()].map(Number).reduce((acc, cur, idx) => (acc + powerNumber(cur, idx + 1)), 0)
+  num === [...num.toString()].map(Number).reduce((acc, cur, idx) => (acc + Math.pow(cur, idx + 1)), 0)
     ? "Disarium !!"
     : "Not !!"
-
-const powerNumber = (num, idx) => {
-  if (idx === 0) return 1
-  let result = 1
-  while (idx > 0) {
-    result *= num
-    idx -= 1
-  }
-  return result
-}
 
 console.log(
   disariumNumber(89),
