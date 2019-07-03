@@ -55,3 +55,8 @@ const automorphic = num => {
     ? "Automorphic"
     : "Not!!"
 }
+
+// solution 3 : endsWith()
+const automorphic = num => String(num * num).endsWith(String(num))
+  ? "Automorphic"
+  : "Not!!"
