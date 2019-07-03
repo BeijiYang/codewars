@@ -18,6 +18,7 @@
 * Jumping Number
 * Special Number
 * Automorphic Number
+* Tidy number
 
 
 ### others
