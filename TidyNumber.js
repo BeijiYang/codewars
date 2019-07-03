@@ -40,6 +40,7 @@ ALL translations are welcomed
 Enjoy Learning !!
  */
 
+// solution 1
 const tidyNumber = num => {
   const list = [...String(num)].map(Number)
   return !list.find((n, i) => (list[i + 1] !== undefined && n > list[i + 1]))
@@ -47,7 +48,13 @@ const tidyNumber = num => {
 
 // 动态类型，使用 && 时，小心 0 与 undefined (find() 方法返回 或 array[array.length] )
 
+// solution 2
 const tidyNumber = num => {
   const list = [...String(num)].map(Number)
   return list.every((n, i) => (list[i + 1] === undefined || n <= list[i + 1]))
 }
+
+// solution 3
+const tidyNumber = num => [...String(num)].map(Number).sort().join('') === String(num)
+// or use double equal
+const tidyNumber = num => [...String(num)].map(Number).sort().join('') == num
