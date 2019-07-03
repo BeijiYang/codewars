@@ -16,6 +16,7 @@
 * Strong Number
 * Disarium Number
 * Jumping Number
+* Special Number
 
 
 ### others
