@@ -43,6 +43,9 @@ const numPrimorial = n => {
   return result
 }
 
+// solution 2
+const numPrimorial = n => tempPrimeNumList.slice(0, n).reduce((acc, cur) => (acc * cur), 1)
+
 
 console.log(
   numPrimorial(3)
