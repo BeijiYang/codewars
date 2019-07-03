@@ -30,6 +30,23 @@ ALL translations are welcomed
 Enjoy Learning !!
 */
 
+// best pritace
+const isPrime = num => {
+  for (let i = 2; i < num; i++) { // 1 & num itself
+    if (num % i === 0) return false
+  }
+  return true
+}
+
+const numPrimorial = n => {
+  const primorialList = []
+  let t = 2 // 2 is the first prime number
+  while (primorialList.length < n) {
+    if (isPrime(t)) primorialList.push(t)
+    t += 1
+  }
+  return primorialList.reduce((acc, cur) => (acc * cur), 1)
+}
 
 // solution 1
 const tempPrimeNumList = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199]
