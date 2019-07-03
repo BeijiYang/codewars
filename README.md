@@ -17,6 +17,7 @@
 * Disarium Number
 * Jumping Number
 * Special Number
+* Automorphic Number
 
 
 ### others
