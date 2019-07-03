@@ -41,6 +41,17 @@ ALL translations are welcomed
 Enjoy Learning !!
 */
 
+// solution 1
 const automorphic = num => num.toString() === (num * num).toString().slice(-(num.toString().length))
   ? "Automorphic"
   : "Not!!"
+
+// solution 2
+const automorphic = num => {
+  const squareStr = (num * num).toString()
+  const numStr = num.toString()
+  const squareStrTail = squareStr.slice(-numStr.length)
+  return squareStrTail === numStr
+    ? "Automorphic"
+    : "Not!!"
+}
