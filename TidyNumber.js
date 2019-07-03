@@ -46,3 +46,8 @@ const tidyNumber = num => {
 }
 
 // 动态类型，使用 && 时，小心 0 与 undefined (find() 方法返回 或 array[array.length] )
+
+const tidyNumber = num => {
+  const list = [...String(num)].map(Number)
+  return list.every((n, i) => (list[i + 1] === undefined || n <= list[i + 1]))
+}
