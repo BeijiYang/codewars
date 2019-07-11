@@ -26,22 +26,14 @@ Must use Object.defineProperty
 
 // Let's make a Cat constructor!
 var Cat = (function () {
-  var cats = [];
-  var constructor = function (name, weight) {
-    if (typeof name == "undefined" || typeof weight == "undefined") {
-      throw Error("Must specify a name and a weight");
-    }
-    Object.defineProperty(this, 'name', {
-      get: function () { return name }
-    });
-    Object.defineProperty(this, 'weight', {
-      get: function () { return weight },
-      set: function (x) { weight = x; return weight }
-    });
-    cats.push(this);
-  };
-  constructor.averageWeight = function () {
-    return cats.reduce(function (sum, cat) { return sum + cat.weight }, 0) / cats.length;
-  };
-  return constructor;
-}());
+  const cats = []
+
+  const constructor = function (name, weight) {
+    if (!name || !weight) throw Error('invalid parameters')
+    Object.defineProperty(this, 'name', { get: () => name })
+    Object.defineProperty(this, 'weight', { get: () => weight, set: value => weight = value })
+    cats.push(this)
+  }
+  constructor.averageWeight = () => cats.reduce((acc, cat) => (acc + cat.weight), 0) / cats.length
+  return constructor
+}())
