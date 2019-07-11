@@ -9,6 +9,10 @@
 * Multiplying numbers as strings
 * First Variation on Caesar Cipher (CRYPTOGRAPHY)
 
+### 5 kyu
+
+* Using closures to share class state
+
 
 ### 6 kyu
 
