@@ -34,6 +34,10 @@ var Cat = (function () {
     Object.defineProperty(this, 'weight', { get: () => weight, set: value => weight = value })
     cats.push(this)
   }
+
   constructor.averageWeight = () => cats.reduce((acc, cat) => (acc + cat.weight), 0) / cats.length
+
   return constructor
 }())
+
+// 参考 Evernote 笔记 Object.defineProperty
