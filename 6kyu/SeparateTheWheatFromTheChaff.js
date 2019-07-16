@@ -40,7 +40,7 @@ Remeber, duplications are included when separating , that's why the number 1 app
 Tune your code! There are 250 assertions and 75,000 elements for each.
 Tune Your Code , Only O(N) Complexity Solutions Will pass .
  */
-
+// solution 1
 const wheatFromChaff = values => {
   let start = 0
   let end = values.length - 1
@@ -57,6 +57,19 @@ const wheatFromChaff = values => {
   }
   return values
 }
+
+// solution 2 想得更清楚了再动笔的方案
+const wheatFromChaff = values => {
+  let head = 0
+  let tail = values.length - 1
+  for (let head = 0, tail = values.length - 1; head < tail; head++ , tail--) {
+    while (values[head] < 0) head++
+    while (values[tail] > 0) tail--
+    if (head < tail)[values[tail], values[head]] = [values[head], values[tail]]
+  }
+  return values
+}
+
 console.log(
   wheatFromChaff([2, -4, 6, -6])
 )
