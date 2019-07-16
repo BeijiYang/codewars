@@ -17,6 +17,7 @@
 ### 6 kyu
 
 * Primorial Of a Number
+* Separate The Wheat From The Chaff
 
 
 ### 7 kyu
