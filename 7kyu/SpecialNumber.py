@@ -40,15 +40,17 @@ ALL translation are welcomed
 Enjoy Learning !!
 '''
 
+# solution 1
 
-def isSpecialNum(num):
+
+def is_specialNum(num):
     return num in [0, 1, 2, 3, 4, 5]
 
 
-def specialNumber(num):
+def special_number(num):
     numList = list(map(int, str(num)))
     for num in numList:
-        if not isSpecialNum(num):
+        if not is_specialNum(num):
             return 'NOT!!'
     return 'Special!!'
 
