@@ -49,7 +49,7 @@ Enjoy Learning !!
 def jumping_number(num):
     num_list = list(map(int, (str(num))))
     for a, b in zip(num_list, num_list[1:]):
-        if abs(a-b) > 1:
+        if abs(a-b) != 1:
             return 'Not!!'
     return 'Jumping!!'
 
