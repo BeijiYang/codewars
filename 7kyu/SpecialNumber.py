@@ -55,6 +55,17 @@ def special_number(num):
     return 'Special!!'
 
 
+# solution 2
+sepcial_set = set('012345')
+
+
+def special_number(num):
+    return 'Special!!' if set(str(num)) <= sepcial_set else 'NOT!!'
+
+
 print(
-    specialNumber(123)
+    # specialNumber(123)
 )
+
+set('012345')  # {'2', '3', '0', '4', '1', '5'}
+set([0, 1, 2, 3, 4, 5])  # {0, 1, 2, 3, 4, 5}
