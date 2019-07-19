@@ -1,5 +1,7 @@
 # codewars
 
+JavaScript & Python
+
 ### 4 kyu 
 
 * Sum Strings as Numbers
