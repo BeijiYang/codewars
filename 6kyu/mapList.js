@@ -15,7 +15,8 @@ Note: the list may be null and can hold any type of value.
 Good luck!
  */
 
-function map(head, f) {
+// solution 1
+const map = (head, f) => {
   if (!head) return null
   const DummyNode = new Node(null, new Node(null, null))
   fList(head, f, DummyNode.next)
@@ -31,3 +32,6 @@ const fList = (node, f, newNode) => {
     return fList(node, f, newNode.next)
   }
 }
+
+// solution 2
+const map = (head, f) => !head ? null : new Node(f(head.data), map(head.next, f))
