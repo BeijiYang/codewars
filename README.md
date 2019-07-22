@@ -21,6 +21,7 @@ JavaScript & Python
 * Primorial Of a Number
 * Separate The Wheat From The Chaff
 * Fun with lists: map (mapList.js)
+* Fun with lists: filter (filterList.js)
 
 
 ### 7 kyu
