@@ -35,3 +35,4 @@ const fList = (node, f, newNode) => {
 
 // solution 2
 const map = (head, f) => !head ? null : new Node(f(head.data), map(head.next, f))
+// 闪光点：对新节点的 next 的处理： newNode.next = map(head.next, f)
