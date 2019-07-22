@@ -14,6 +14,7 @@ Note: the list may be null and can hold any type of value.
 Good luck!
  */
 
+// solution 1
 const length = head => {
   let len = 0
   while (head) {
@@ -22,3 +23,6 @@ const length = head => {
   }
   return len
 }
+
+// solution 2
+const length = head => !head ? 0 : length(head.next) + 1
