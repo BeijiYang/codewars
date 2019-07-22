@@ -32,6 +32,7 @@ JavaScript & Python
 * Special Number
 * Automorphic Number
 * Tidy number
+* Fun with lists: length (lenList.js)
 
 
 ### others
