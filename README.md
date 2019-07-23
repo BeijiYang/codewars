@@ -34,6 +34,7 @@ JavaScript & Python
 * Automorphic Number
 * Tidy number
 * Fun with lists: length (lenList.js)
+* Functional Addition
 
 
 ### others
