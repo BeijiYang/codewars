@@ -14,6 +14,7 @@ JavaScript & Python
 ### 5 kyu
 
 * Using closures to share class state
+* Partition On
 
 
 ### 6 kyu
