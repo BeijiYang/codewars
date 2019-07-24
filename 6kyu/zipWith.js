@@ -18,6 +18,7 @@ Input validation
 Assume all input is valid.
  */
 
+// solution 1
 const zipWith = (fn, a0, a1) => {
   let result = []
   for (let i = 0; i < a0.length && i < a1.length; i++) {
@@ -25,3 +26,6 @@ const zipWith = (fn, a0, a1) => {
   }
   return result
 }
+
+// solution 2
+const zipWith = (fn, a0, a1) => Array.from({ length: Math.min(a0.length, a1.length) }, (_, i) => fn(a0[i], a1[i]))
