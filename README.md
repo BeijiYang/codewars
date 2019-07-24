@@ -24,6 +24,7 @@ JavaScript & Python
 * Fun with lists: map (mapList.js)
 * Fun with lists: filter (filterList.js)
 * zipWith
+* Unary function chainer
 
 
 ### 7 kyu
