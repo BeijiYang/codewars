@@ -18,9 +18,18 @@ Input validation
 Assume all input is valid.
 '''
 
+# solution 1
+
 
 def zip_with(fn, a1, a2):
     result = []
     for i in range(min(len(a1), len(a2))):
         result.append(fn(a1[i], a2[i]))
     return result
+
+
+# solution 2
+
+
+def zip_with(fn, a1, a2):
+    return list(map(fn, a1, a2))
