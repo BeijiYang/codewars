@@ -7,7 +7,17 @@ Should yield the same result as
 d(c(b(a(input))))
  */
 
+// declarative solution
 const chained = fns => arg => fns.reduce((acc, cur) => cur(acc), arg)
+
+// imperative solution
+const chained = fns => arg => {
+  let t = arg
+  for (let i = 0; i < fns.length; i++) {
+    t = fns[i](t)
+  }
+  return t
+}
 
 /** test cases
 
