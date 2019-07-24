@@ -23,6 +23,7 @@ JavaScript & Python
 * Separate The Wheat From The Chaff
 * Fun with lists: map (mapList.js)
 * Fun with lists: filter (filterList.js)
+* zipWith
 
 
 ### 7 kyu
